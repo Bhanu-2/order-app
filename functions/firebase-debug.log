@@ -1,0 +1,220 @@
+[debug] [2023-02-15T17:37:10.788Z] ----------------------------------------------------------------------
+[debug] [2023-02-15T17:37:10.790Z] Command:       /Users/b0231749/.nvm/versions/node/v14.18.0/bin/node /Users/b0231749/.nvm/versions/node/v14.18.0/bin/firebase emulators:start --only functions
+[debug] [2023-02-15T17:37:10.790Z] CLI Version:   11.23.1
+[debug] [2023-02-15T17:37:10.790Z] Platform:      darwin
+[debug] [2023-02-15T17:37:10.790Z] Node Version:  v14.18.0
+[debug] [2023-02-15T17:37:10.791Z] Time:          Wed Feb 15 2023 23:07:10 GMT+0530 (India Standard Time)
+[debug] [2023-02-15T17:37:10.791Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-15T17:37:10.858Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-15T17:37:10.858Z] > authorizing via signed-in user (er.priyabhanu@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-02-15T17:37:11.392Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T17:37:11.392Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-15T17:37:11.402Z] [hub] writing locator at /var/folders/90/4ybsh3vn65n2d8l7dgjqv9q40000gm/T/hub-order-app-516c0.json
+[debug] [2023-02-15T17:37:11.789Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T17:37:11.790Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T17:37:11.793Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-02-15T17:37:11.799Z] defaultcredentials: writing to file /Users/b0231749/.config/firebase/er_priyabhanu_gmail.com_application_default_credentials.json
+[debug] [2023-02-15T17:37:11.813Z] Setting GAC to /Users/b0231749/.config/firebase/er_priyabhanu_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/b0231749/.config/firebase/er_priyabhanu_gmail.com_application_default_credentials.json"}}
+[debug] [2023-02-15T17:37:11.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/order-app-516c0/adminSdkConfig [none]
+[debug] [2023-02-15T17:37:12.454Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/order-app-516c0/adminSdkConfig 200
+[debug] [2023-02-15T17:37:12.454Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/order-app-516c0/adminSdkConfig {"projectId":"order-app-516c0","storageBucket":"order-app-516c0.appspot.com"}
+[info] i  ui: downloading ui-v1.11.4.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.4.zip..."}}
+[debug] [2023-02-15T17:37:12.501Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip 
+[debug] [2023-02-15T17:37:12.862Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip 200
+[debug] [2023-02-15T17:37:12.862Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip [stream]
+[debug] [2023-02-15T17:37:15.327Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-02-15T17:37:15.327Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-02-15T17:37:15.327Z] Starting Emulator UI with command {"binary":"node","args":["/Users/b0231749/.cache/firebase/emulators/ui-v1.11.4/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/b0231749/.cache/firebase/emulators/ui-v1.11.4/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-02-15T17:37:15.451Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-02-15T17:37:15.451Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/b0231749/Desktop/order-app/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/b0231749/Desktop/order-app/functions\" for Cloud Functions..."}}
+[debug] [2023-02-15T17:37:15.604Z] Validating nodejs source
+[debug] [2023-02-15T17:37:16.307Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T17:37:16.308Z] Building nodejs source
+[debug] [2023-02-15T17:37:16.308Z] Failed to find version of module node: reached end of search path /Users/b0231749/Desktop/order-app/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. 
+[debug] [2023-02-15T17:37:16.312Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T17:37:16.319Z] Found firebase-functions binary at '/Users/b0231749/Desktop/order-app/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T17:37:16.469Z] Serving at port 8055
+
+[debug] [2023-02-15T17:37:16.789Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"addMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"addMessage"},"makeUppercase":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/order-app-516c0/databases/(default)/documents/messages/{documentId}"},"retry":false},"labels":{},"entryPoint":"makeUppercase"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T17:37:16.794Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, addMessage, makeUppercase. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, addMessage, makeUppercase."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/order-app-516c0/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/order-app-516c0/us-central1/helloWorld)."}}
+[info] ✔  functions[us-central1-addMessage]: http function initialized (http://127.0.0.1:5001/order-app-516c0/us-central1/addMessage). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/order-app-516c0/us-central1/addMessage)."}}
+[info] i  functions[us-central1-makeUppercase]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-02-15T17:37:54.201Z] [work-queue] {"queuedWork":["/order-app-516c0/us-central1/helloWorld-2023-02-15T17:37:54.201Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T17:37:54.201Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/order-app-516c0/us-central1/helloWorld-2023-02-15T17:37:54.201Z"],"workRunningCount":1}
+[debug] [2023-02-15T17:37:54.202Z] Accepted request GET /order-app-516c0/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2023-02-15T17:37:54.205Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T17:37:54.206Z] [functions] Got req.url=/order-app-516c0/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/order-app-516c0/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2023-02-15T17:37:54.220Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2023-02-15T17:37:54.222Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2023-02-15T17:37:55.193Z] [runtime-status] [99555] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.194Z] [runtime-status] [99555] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.195Z] [runtime-status] [99555] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T17:37:55.195Z] [runtime-status] [99555] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.368Z] [runtime-status] [99555] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T17:37:55.369Z] [runtime-status] [99555] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-15T17:37:55.370Z] [runtime-status] [99555] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.370Z] [runtime-status] [99555] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.372Z] [runtime-status] [99555] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:37:55.372Z] [runtime-status] [99555] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T17:37:55.375Z] [runtime-status] [99555] initializeApp(DEFAULT) {"storageBucket":"order-app-516c0.appspot.com","projectId":"order-app-516c0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] initializeApp(DEFAULT) {\"storageBucket\":\"order-app-516c0.appspot.com\",\"projectId\":\"order-app-516c0\"}"}}
+[debug] [2023-02-15T17:37:55.380Z] [runtime-status] [99555] Functions runtime initialized. {"cwd":"/Users/b0231749/Desktop/order-app/functions","node_version":"14.18.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Functions runtime initialized. {\"cwd\":\"/Users/b0231749/Desktop/order-app/functions\",\"node_version\":\"14.18.0\"}"}}
+[debug] [2023-02-15T17:37:55.380Z] [runtime-status] [99555] Listening to port: /var/folders/90/4ybsh3vn65n2d8l7dgjqv9q40000gm/T/fire_emu_e27e6fb78ce03be0.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99555] Listening to port: /var/folders/90/4ybsh3vn65n2d8l7dgjqv9q40000gm/T/fire_emu_e27e6fb78ce03be0.sock"}}
+[debug] [2023-02-15T17:37:55.461Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: IDLE"}}
+[debug] [2023-02-15T17:37:55.462Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2023-02-15T17:37:55.462Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 6.321424ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 6.321424ms"}}
+[debug] [2023-02-15T17:37:55.469Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: IDLE"}}
+[debug] [2023-02-15T17:37:55.469Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T17:37:55.502Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-02-15T17:38:22.067Z] File /Users/b0231749/Desktop/order-app/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/b0231749/Desktop/order-app/functions/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T17:38:23.069Z] Validating nodejs source
+[debug] [2023-02-15T17:38:24.005Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T17:38:24.006Z] Building nodejs source
+[debug] [2023-02-15T17:38:24.006Z] Failed to find version of module node: reached end of search path /Users/b0231749/Desktop/order-app/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. 
+[debug] [2023-02-15T17:38:24.008Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T17:38:24.013Z] Found firebase-functions binary at '/Users/b0231749/Desktop/order-app/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T17:38:24.223Z] Serving at port 8503
+
+[debug] [2023-02-15T17:38:24.533Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"addMessage":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"addMessage"},"makeUppercase":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/order-app-516c0/databases/(default)/documents/messages/{documentId}"},"retry":false},"labels":{},"entryPoint":"makeUppercase"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T17:38:24.538Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, addMessage, makeUppercase. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, addMessage, makeUppercase."}}
+[debug] [2023-02-15T17:38:24.545Z] [worker-pool] Shutting down IDLE worker (us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloWorld)"}}
+[debug] [2023-02-15T17:38:24.545Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: FINISHING"}}
+[debug] [2023-02-15T17:38:24.554Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: exited"}}
+[debug] [2023-02-15T17:38:24.554Z] [worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-45121e05-ef86-4307-b89f-0d1a75433ddc]: FINISHED"}}
+[debug] [2023-02-15T17:38:25.108Z] [work-queue] {"queuedWork":["/order-app-516c0/us-central1/helloWorld-2023-02-15T17:38:25.108Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T17:38:25.108Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/order-app-516c0/us-central1/helloWorld-2023-02-15T17:38:25.108Z"],"workRunningCount":1}
+[debug] [2023-02-15T17:38:25.108Z] Accepted request GET /order-app-516c0/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2023-02-15T17:38:25.111Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T17:38:25.111Z] [functions] Got req.url=/order-app-516c0/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/order-app-516c0/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2023-02-15T17:38:25.111Z] [worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0"}}
+[debug] [2023-02-15T17:38:25.117Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2023-02-15T17:38:25.118Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2023-02-15T17:38:26.064Z] [runtime-status] [99579] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.066Z] [runtime-status] [99579] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.066Z] [runtime-status] [99579] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T17:38:26.067Z] [runtime-status] [99579] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.266Z] [runtime-status] [99579] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T17:38:26.267Z] [runtime-status] [99579] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-15T17:38:26.267Z] [runtime-status] [99579] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.268Z] [runtime-status] [99579] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.270Z] [runtime-status] [99579] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-15T17:38:26.270Z] [runtime-status] [99579] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.5.0","resolution":"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"/Users/b0231749/Desktop/order-app/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T17:38:26.272Z] [runtime-status] [99579] initializeApp(DEFAULT) {"storageBucket":"order-app-516c0.appspot.com","projectId":"order-app-516c0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] initializeApp(DEFAULT) {\"storageBucket\":\"order-app-516c0.appspot.com\",\"projectId\":\"order-app-516c0\"}"}}
+[debug] [2023-02-15T17:38:26.277Z] [runtime-status] [99579] Functions runtime initialized. {"cwd":"/Users/b0231749/Desktop/order-app/functions","node_version":"14.18.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Functions runtime initialized. {\"cwd\":\"/Users/b0231749/Desktop/order-app/functions\",\"node_version\":\"14.18.0\"}"}}
+[debug] [2023-02-15T17:38:26.277Z] [runtime-status] [99579] Listening to port: /var/folders/90/4ybsh3vn65n2d8l7dgjqv9q40000gm/T/fire_emu_d43b470c7cc08777.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [99579] Listening to port: /var/folders/90/4ybsh3vn65n2d8l7dgjqv9q40000gm/T/fire_emu_d43b470c7cc08777.sock"}}
+[debug] [2023-02-15T17:38:26.349Z] [worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: IDLE"}}
+[debug] [2023-02-15T17:38:26.349Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2023-02-15T17:38:26.349Z] [worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 6.118663ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 6.118663ms"}}
+[debug] [2023-02-15T17:38:26.356Z] [worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: IDLE"}}
+[debug] [2023-02-15T17:38:26.356Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-16T07:42:06.222Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2023-02-16T07:42:06.267Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/Users/b0231749/.nvm/versions/node/v14.18.0/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2023-02-16T07:42:06.278Z] [worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: exited"}}
+[debug] [2023-02-16T07:42:06.278Z] [worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-8659aab1-f033-48d1-8cce-cbaee13c1e73]: FINISHED"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
